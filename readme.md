@@ -46,3 +46,16 @@ for it, however we don't need a database, we still need it as a file.
 1. **Remember about proper error handling**
 
 1. **We require code in git repository**
+
+## Usage
+
+Base API path is `/api/v0/movies`.
+
+You can add query params to your GET request. To add multiple genre queries chain `genres=GENRE`.
+
+POST request's body should be JSON and should contain at least all required movie fields.
+
+- Use `npm run dev` to run app during development.
+- Use `npm start` to build and run app.
+- Use `npm test` to run Jest tests.
+- Use `npm run build` to build app.
