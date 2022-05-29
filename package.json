@@ -1,7 +1,7 @@
 {
 	"name": "movie-api",
-	"version": "0.0.1",
-	"description": "Recruitment task for The Software House",
+	"version": "0.0.3",
+	"description": "Recruitment task",
 	"main": "src/index.ts",
 	"scripts": {
 		"test": "npx jest",

@@ -5,8 +5,8 @@ import DB from "../types/db";
 import Movie from "../types/movie";
 import readDB from "./read-db";
 
-const writeNewMovie = async (newMovie: Movie, memoDB?: DB) => {
-	const db = memoDB ?? (await readDB());
+const writeNewMovie = async (newMovie: Movie) => {
+	const db = await readDB();
 	db.movies.push(newMovie);
 	try {
 		const content = JSON.stringify(db);

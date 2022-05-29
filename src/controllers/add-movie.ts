@@ -29,7 +29,7 @@ export const addMovie = async (
 			}
 		);
 
-		await writeNewMovie(newMovie, jsonData);
+		await writeNewMovie(newMovie);
 		res.status(201).json(newMovie);
 	} catch (err) {
 		next(err);
